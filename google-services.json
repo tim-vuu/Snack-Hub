@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "686118***",
+    "project_id": "snackhub",
+    "storage_bucket": "snackhub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:********:android:9a70f7c6d353f483c57d98",
+        "android_client_info": {
+          "package_name": "com.application.scool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "*********Ibg6BwGofw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6*******1:android:c8c1d6b3*****57d98",
+        "android_client_info": {
+          "package_name": "com.application.snackhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQAKYg*********zzIbg6BwGofw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

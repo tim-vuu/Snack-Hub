@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mySplashScreen">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.kleine.fragments.applunch.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+        >
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstScreenFragment"
+        android:name="com.example.kleine.fragments.applunch.FirstScreenFragment"
+        android:label="FirstScreenFragment"
+        tools:layout="@layout/fragment_first_screen">
+        <action
+            android:id="@+id/action_firstScreenFragment_to_secondScreenFragment"
+            app:destination="@id/secondScreenFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:popUpTo="@id/firstScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreenFragment"
+        android:name="com.example.kleine.fragments.applunch.SecondScreenFragment"
+        android:label="SecondScreenFragment"
+        tools:layout="@layout/fragment_second_screen">
+        <action
+            android:id="@+id/action_secondScreenFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_secondScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.kleine.fragments.applunch.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_bottom"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mySplashScreen"
+        android:name="com.example.kleine.fragments.applunch.MySplashScreen"
+        android:label="MySplashScreen"
+        app:enterAnim="@anim/from_bottom"
+        app:popUpTo="@id/firstScreenFragment"
+        tools:layout="@layout/fragemnt_splash_screen">
+        <action
+            android:id="@+id/action_mySplashScreen_to_firstScreenFragment"
+            app:destination="@id/firstScreenFragment"
+            app:popUpTo="@id/mySplashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
